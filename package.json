@@ -1,0 +1,27 @@
+{
+  "name": "musicfestival",
+  "version": "1.0.0",
+  "description": "Festival Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Sass",
+    "Gulp",
+    "Scss",
+    "Js",
+    "Html",
+    "Css"
+  ],
+  "author": "Héctor Zapata",
+  "license": "ISC",
+  "devDependencies": {
+    "dart-sass": "^1.25.0",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^5.0.0",
+    "node-sass": "^6.0.1",
+    "sass": "^1.35.1"
+  }
+}
