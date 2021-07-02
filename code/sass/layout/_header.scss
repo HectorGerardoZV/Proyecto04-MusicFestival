@@ -1,0 +1,44 @@
+//Header Style
+.header {
+    padding: $medium - 2 0;
+    background-color: $colorB;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .header__title {
+        color: $colorF;
+        //Responsive
+        @include mq($phone) {
+            text-align: center;
+            font-size: 3.5rem;
+        }
+    }
+    .header__nav {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+        a {
+            color: $colorF;
+            transition: ease .4s;
+            &:hover {
+                color: $colorE;
+            }
+        }
+        //Responsive
+        @include mq($tablet) {
+            margin-top: $small;
+            gap: 3rem;
+        }
+        @include mq($phone) {
+            margin-top: $small;
+            flex-direction: column;
+        }
+    }
+    //Responsive
+    @include mq($tablet) {
+        flex-direction: column;
+    }
+}
