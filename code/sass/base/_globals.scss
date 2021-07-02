@@ -11,11 +11,37 @@ html {
 
 body {
     font-size: 16px;
+    font-family: $fPrincipal;
 }
 
 //Labels
 h1,
 h2,
-h3 {
+h3,
+p {
     margin: 0;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
 }
