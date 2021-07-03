@@ -538,6 +538,11 @@ img {
   margin-bottom: 3rem;
   color: #0972B5;
 }
+@media (max-width: 768px) {
+  .about__content .about__description h3 {
+    margin-top: 3rem;
+  }
+}
 .about__content .about__description p {
   padding-top: 3rem;
   width: 90%;
@@ -545,4 +550,9 @@ img {
   margin: 0 auto;
   color: #0972B5;
   font-weight: 700;
+}
+@media (max-width: 768px) {
+  .about__content {
+    grid: none;
+  }
 }
