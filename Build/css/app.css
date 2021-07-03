@@ -675,6 +675,12 @@ img {
 .gallery ul li {
   cursor: pointer;
 }
+.gallery ul li img {
+  transition: ease 0.4s;
+}
+.gallery ul li img:hover {
+  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.12), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0862625), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0715329), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.06), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0484671), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0337375);
+}
 
 .gallery__overlay {
   position: fixed;
@@ -712,4 +718,59 @@ img {
 
 .hidden-body {
   overflow: hidden;
+}
+
+.tickets {
+  margin-top: 7rem;
+}
+
+.tickets__background {
+  background-color: #0FFFF8;
+}
+.tickets__background .tickets__content {
+  padding-top: 7rem;
+  padding-bottom: 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 7rem;
+}
+
+.tickets__cart {
+  padding: 2rem 1rem;
+  transition: ease 0.2s;
+}
+.tickets__cart .ticket__title {
+  color: #FFFFFF;
+  text-align: center;
+  padding: 1rem 0;
+  background-color: #0972B5;
+}
+.tickets__cart .ticket__content {
+  margin: 0;
+  padding: 0;
+  background-color: #102F51;
+}
+.tickets__cart .ticket__content li {
+  padding: 2rem 0 2rem 3rem;
+  color: #FFFFFF;
+  border-bottom: solid 1px white;
+}
+.tickets__cart .ticket__content li:last-of-type {
+  border-bottom: none;
+  padding-bottom: 7rem;
+}
+.tickets__cart .ticket__price {
+  padding: 1rem 0;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  margin-top: -2rem;
+  max-width: 30%;
+  background-color: #08BFFF;
+  text-align: center;
+  color: #FFFFFF;
+  font-weight: 700;
+}
+.tickets__cart:hover {
+  filter: drop-shadow(5px 5px 10px #000);
 }

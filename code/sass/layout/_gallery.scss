@@ -17,6 +17,12 @@
         margin: 0;
         li {
             cursor: pointer;
+            img {
+                transition: ease .4s;
+                &:hover {
+                    box-shadow: $shadow;
+                }
+            }
         }
     }
 }

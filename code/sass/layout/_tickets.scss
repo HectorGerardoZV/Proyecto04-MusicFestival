@@ -1,0 +1,52 @@
+.tickets {
+    margin-top: $big;
+}
+
+.tickets__background {
+    background-color: $colorE;
+    .tickets__content {
+        padding-top: $big;
+        padding-bottom: $medium;
+        @include grid(3, $big);
+    }
+}
+
+.tickets__cart {
+    padding: 2rem 1rem;
+    .ticket__title {
+        color: $colorF;
+        text-align: center;
+        padding: 1rem 0;
+        background-color: $colorC;
+    }
+    .ticket__content {
+        margin: 0;
+        padding: 0;
+        background-color: $colorB;
+        li {
+            padding: 2rem 0 2rem 3rem;
+            color: $colorF;
+            border-bottom: solid 1px white;
+            &:last-of-type {
+                border-bottom: none;
+                padding-bottom: 7rem;
+            }
+        }
+    }
+    .ticket__price {
+        padding: 1rem 0;
+        margin: 0 auto;
+        position: relative;
+        z-index: 1;
+        margin-top: -2rem;
+        max-width: 30%;
+        background-color: $colorD;
+        text-align: center;
+        color: $colorF;
+        font-weight: $fw-700;
+    }
+    transition: ease .2s;
+    &:hover {
+        filter: drop-shadow(5px 5px 10px #000);
+    }
+}
