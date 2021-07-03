@@ -1,0 +1,18 @@
+.socilaNetwoeks__content {
+    max-width: 50rem;
+    margin-top: $big;
+    display: flex;
+    justify-content: space-evenly;
+    img {
+        width: 9rem;
+        height: 9rem;
+        transition: ease .4s;
+        &:hover {
+            filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.377));
+        }
+        @include mq($phone) {
+            width: 7rem;
+            height: 7rem;
+        }
+    }
+}

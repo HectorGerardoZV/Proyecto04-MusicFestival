@@ -796,3 +796,35 @@ img {
 .tickets__cart:hover {
   filter: drop-shadow(5px 5px 10px #000);
 }
+
+.socilaNetwoeks__content {
+  max-width: 50rem;
+  margin-top: 7rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+.socilaNetwoeks__content img {
+  width: 9rem;
+  height: 9rem;
+  transition: ease 0.4s;
+}
+.socilaNetwoeks__content img:hover {
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.377));
+}
+@media (max-width: 480px) {
+  .socilaNetwoeks__content img {
+    width: 7rem;
+    height: 7rem;
+  }
+}
+
+.footer {
+  margin-top: 7rem;
+  padding: 2rem 0;
+  background-color: #0972B5;
+  color: #FFFFFF;
+  text-align: center;
+}
+.footer h3 {
+  font-size: 2rem;
+}
