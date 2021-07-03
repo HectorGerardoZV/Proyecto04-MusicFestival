@@ -517,8 +517,10 @@ img {
 .about {
   margin-top: 7rem;
 }
-.about .section__title {
-  width: 50%;
+
+.section__title {
+  max-width: 50%;
+  width: 40rem;
   background-color: #102F51;
   padding: 1rem 2rem;
   text-align: center;
@@ -555,4 +557,78 @@ img {
   .about__content {
     grid: none;
   }
+}
+
+.lineup {
+  margin-top: 7rem;
+}
+
+.lineup__background {
+  background-color: #102F51;
+}
+.lineup__background .lineup__content {
+  padding: 3rem 0;
+}
+.lineup__background .lineup__content h3 {
+  margin-top: 5rem;
+  text-align: center;
+  color: #FFFFFF;
+}
+.lineup__background .lineup__content p {
+  text-align: center;
+  color: #0FFFF8;
+  margin-bottom: 5rem;
+  line-height: 2;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.lineup__section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 7rem;
+}
+.lineup__section .lineup__cart h3 {
+  text-align: center;
+  color: #140F07;
+  padding-top: 3rem;
+}
+.lineup__section .lineup__cart h3:after {
+  content: "";
+  width: 10rem;
+  height: 10rem;
+  display: block;
+  margin: 2rem auto 0 auto;
+  background-size: 8rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-bottom: 3rem;
+}
+.lineup__section .lineup__cart ul {
+  padding: 0;
+  margin: 0;
+}
+.lineup__section .lineup__cart ul li {
+  padding: 1.5rem 0;
+  padding-left: 2rem;
+}
+
+.rock {
+  background-color: #0FFFF8;
+}
+.rock li:nth-child(odd) {
+  background-color: #08BFFF;
+}
+.rock h3:after {
+  background-image: url(../../../Build/img/Rock.svg);
+}
+
+.edm {
+  background-color: #08BFFF;
+}
+.edm li:nth-child(odd) {
+  background-color: #0FFFF8;
+}
+.edm h3:after {
+  background-image: url(../../../Build/img/EDM.svg);
 }

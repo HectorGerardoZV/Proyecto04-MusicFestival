@@ -1,15 +1,17 @@
 .about {
     margin-top: $big;
-    .section__title {
-        width: 50%;
-        background-color: $colorB;
-        padding: 1rem 2rem;
-        text-align: center;
-        margin: 0 auto;
-        margin-bottom: $small;
-        color: $colorF;
-        box-shadow: $shadow;
-    }
+}
+
+.section__title {
+    max-width: 50%;
+    width: 40rem;
+    background-color: $colorB;
+    padding: 1rem 2rem;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: $small;
+    color: $colorF;
+    box-shadow: $shadow;
 }
 
 .about__content {

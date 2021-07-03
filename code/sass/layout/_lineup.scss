@@ -1,0 +1,77 @@
+.lineup {
+    margin-top: $big;
+}
+
+.lineup__background {
+    background-color: $colorB;
+    .lineup__content {
+        padding: $medium - 2 0;
+        h3 {
+            margin-top: $medium;
+            text-align: center;
+            color: $colorF;
+        }
+        p {
+            text-align: center;
+            color: $colorE;
+            margin-bottom: $medium;
+            line-height: 2;
+            font-weight: $fw-700;
+            font-size: 3rem;
+        }
+    }
+}
+
+.lineup__section {
+    @include grid(2, $big);
+    .lineup__cart {
+        h3 {
+            text-align: center;
+            color: $colorA;
+            padding-top: $small;
+            &:after {
+                content: "";
+                width: 10rem;
+                height: 10rem;
+                display: block;
+                margin: 2rem auto 0 auto;
+                background-size: 8rem;
+                background-repeat: no-repeat;
+                background-position: center center;
+                margin-bottom: $small;
+            }
+        }
+        ul {
+            padding: 0;
+            margin: 0;
+            li {
+                padding: 1.5rem 0;
+                padding-left: 2rem;
+            }
+        }
+    }
+}
+
+.rock {
+    background-color: $colorE;
+    li:nth-child(odd) {
+        background-color: $colorD;
+    }
+    h3 {
+        &:after {
+            background-image: url(../../../Build/img/Rock.svg);
+        }
+    }
+}
+
+.edm {
+    background-color: $colorD;
+    li:nth-child(odd) {
+        background-color: $colorE;
+    }
+    h3 {
+        &:after {
+            background-image: url(../../../Build/img/EDM.svg);
+        }
+    }
+}
