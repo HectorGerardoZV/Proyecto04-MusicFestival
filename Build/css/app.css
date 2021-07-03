@@ -734,6 +734,28 @@ img {
   grid-template-columns: repeat(3, 1fr);
   column-gap: 7rem;
 }
+@media (max-width: 1000px) {
+  .tickets__background .tickets__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 7rem;
+  }
+}
+@media (max-width: 1000px) {
+  .tickets__background .tickets__content .tickets__cart:last-of-type {
+    grid-column: 1/3;
+  }
+}
+@media (max-width: 768px) {
+  .tickets__background .tickets__content .tickets__cart:last-of-type {
+    grid-column: 1/2;
+  }
+}
+@media (max-width: 768px) {
+  .tickets__background .tickets__content {
+    grid: none;
+  }
+}
 
 .tickets__cart {
   padding: 2rem 1rem;
