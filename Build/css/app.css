@@ -612,6 +612,16 @@ img {
   padding: 1.5rem 0;
   padding-left: 2rem;
 }
+@media (max-width: 768px) {
+  .lineup__section .lineup__cart {
+    margin-bottom: 3rem;
+  }
+}
+@media (max-width: 768px) {
+  .lineup__section {
+    grid: none;
+  }
+}
 
 .rock {
   background-color: #0FFFF8;

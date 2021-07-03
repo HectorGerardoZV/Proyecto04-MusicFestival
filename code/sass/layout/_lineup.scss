@@ -49,6 +49,12 @@
                 padding-left: 2rem;
             }
         }
+        @include mq($tablet) {
+            margin-bottom: $small;
+        }
+    }
+    @include mq($tablet) {
+        grid: none;
     }
 }
 
