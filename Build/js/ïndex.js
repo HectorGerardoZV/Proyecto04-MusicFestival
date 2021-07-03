@@ -22,5 +22,21 @@ function addGallery() {
 
 function openImgBig(e) {
     const idImg = parseInt(e.target.dataset.imagenId);
-    console.log(idImg);
+    const img = document.createElement("IMG");
+    const overlay = document.createElement("DIV");
+    const body = document.querySelector("body");
+
+    overlay.classList.add("gallery__overlay");
+    img.src = `../../build/img/big-img/gallery-img-${idImg}.jpg`;
+    overlay.appendChild(img)
+
+    body.appendChild(overlay);
+    body.classList.add("hidden-body");
+
+    overlay.onclick = function() {
+        body.removeChild(overlay);
+        body.classList.remove("hidden-body");
+        body.classList.add("scroll-body");
+    }
+
 }
