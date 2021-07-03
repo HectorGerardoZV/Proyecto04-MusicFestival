@@ -1,0 +1,32 @@
+.about {
+    margin-top: $big;
+    .section__title {
+        width: 50%;
+        background-color: $colorB;
+        padding: 1rem 2rem;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: $small;
+        color: $colorF;
+        box-shadow: $shadow;
+    }
+}
+
+.about__content {
+    @include grid(3, 5rem);
+    .about__description {
+        h3 {
+            text-align: center;
+            margin-bottom: $small;
+            color: $colorC;
+        }
+        p {
+            padding-top: $small;
+            width: 90%;
+            text-align: center;
+            margin: 0 auto;
+            color: $colorC;
+            font-weight: $fw-700;
+        }
+    }
+}
