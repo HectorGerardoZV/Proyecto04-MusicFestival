@@ -642,3 +642,36 @@ img {
 .edm h3:after {
   background-image: url(../../../Build/img/EDM.svg);
 }
+
+.gallery {
+  margin-top: 7rem;
+}
+.gallery .gallery__content {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  column-gap: 3rem;
+  row-gap: 3rem;
+}
+@media (max-width: 768px) {
+  .gallery .gallery__content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 3rem;
+    row-gap: 3rem;
+  }
+}
+@media (max-width: 480px) {
+  .gallery .gallery__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3rem;
+    row-gap: 3rem;
+  }
+}
+.gallery ul {
+  padding: 0;
+  margin: 0;
+}
+.gallery ul li {
+  cursor: pointer;
+}

@@ -1,0 +1,22 @@
+.gallery {
+    margin-top: $big;
+    .gallery__content {
+        @include grid(6, $small);
+        row-gap: $small;
+        @include mq($tablet) {
+            @include grid(4, $small);
+            row-gap: $small;
+        }
+        @include mq($phone) {
+            @include grid(2, $small);
+            row-gap: $small;
+        }
+    }
+    ul {
+        padding: 0;
+        margin: 0;
+        li {
+            cursor: pointer;
+        }
+    }
+}
